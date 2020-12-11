@@ -2,15 +2,15 @@
 
 function isPrime($num)
 {
-    if ($num == 2) {
+    if ($num === 2) {
         return true;
     }
-    if ($num == 1 || $num %2 == 0) {
+    if ($num === 1 || $num %2 === 0) {
         return false;
     }
     $to = sqrt($num) + 1;
     for ($i = 3; $i <= $to; $i += 2) {
-        if ($num % $i == 0) {
+        if ($num % $i === 0) {
             return false;
         }
     }
